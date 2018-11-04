@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9DAB6892-C119-41A7-881A-5DFA12D46C3E}</ProjectGuid>
+    <RootNamespace>PlaneGame</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Ball.cpp" />
+    <ClCompile Include="Ball1.cpp" />
+    <ClCompile Include="Ball2.cpp" />
+    <ClCompile Include="Bomb.cpp" />
+    <ClCompile Include="Bomb1.cpp" />
+    <ClCompile Include="BOSS.cpp" />
+    <ClCompile Include="BOSS2.cpp" />
+    <ClCompile Include="BOSS3.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Explosion.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GiftLife.cpp" />
+    <ClCompile Include="GiftShield.cpp" />
+    <ClCompile Include="GiftWeapon.cpp" />
+    <ClCompile Include="GiftWM.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MyPlane.cpp" />
+    <ClCompile Include="PlaneGame.cpp" />
+    <ClCompile Include="PlaneGameDoc.cpp" />
+    <ClCompile Include="PlaneGameView.cpp" />
+    <ClCompile Include="Shield.cpp" />
+    <ClCompile Include="Skill.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Wingman.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Ball.h" />
+    <ClInclude Include="Ball1.h" />
+    <ClInclude Include="Ball2.h" />
+    <ClInclude Include="Bomb.h" />
+    <ClInclude Include="Bomb1.h" />
+    <ClInclude Include="BOSS.h" />
+    <ClInclude Include="BOSS2.h" />
+    <ClInclude Include="BOSS3.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Explosion.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GiftLife.h" />
+    <ClInclude Include="GiftShield.h" />
+    <ClInclude Include="GiftWeapon.h" />
+    <ClInclude Include="GiftWM.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MyPlane.h" />
+    <ClInclude Include="PlaneGame.h" />
+    <ClInclude Include="PlaneGameDoc.h" />
+    <ClInclude Include="PlaneGameView.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Shield.h" />
+    <ClInclude Include="Skill.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Wingman.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="plane\ball.BMP" />
+    <Image Include="plane\ball1.BMP" />
+    <Image Include="plane\ball2.bmp" />
+    <Image Include="plane\ball3.BMP" />
+    <Image Include="plane\bg3_0.bmp" />
+    <Image Include="plane\bitmap1.bmp" />
+    <Image Include="plane\bomb.bmp" />
+    <Image Include="plane\boss_bullet.bmp" />
+    <Image Include="plane\boss_bullet2.bmp" />
+    <Image Include="plane\defend.bmp" />
+    <Image Include="plane\enemy.bmp" />
+    <Image Include="plane\enemy3.bmp" />
+    <Image Include="plane\explosion.BMP" />
+    <Image Include="plane\giftweapon.bmp" />
+    <Image Include="plane\giftwm.bmp" />
+    <Image Include="plane\img_bg_level_1.bmp" />
+    <Image Include="plane\img_bg_level_2.bmp" />
+    <Image Include="plane\img_bg_level_3.bmp" />
+    <Image Include="plane\img_bg_level_5.bmp" />
+    <Image Include="plane\img_bomb1.bmp" />
+    <Image Include="plane\img_bomb2.bmp" />
+    <Image Include="plane\img_bomb3.bmp" />
+    <Image Include="plane\img_plane2.bmp" />
+    <Image Include="plane\img_plane_boss1_副本.bmp" />
+    <Image Include="plane\img_plane_boss2_副本.bmp" />
+    <Image Include="plane\img_plane_boss5_副本.bmp" />
+    <Image Include="plane\img_plane_main.bmp" />
+    <Image Include="plane\img_skill.bmp" />
+    <Image Include="plane\img_wingman.bmp" />
+    <Image Include="plane\life.bmp" />
+    <Image Include="plane\me.bmp" />
+    <Image Include="plane\plane1.bmp" />
+    <Image Include="plane\plane2.bmp" />
+    <Image Include="plane\plane3.bmp" />
+    <Image Include="plane\shield.bmp" />
+    <Image Include="res\PlaneGame.ico" />
+    <Image Include="res\PlaneGameDoc.ico" />
+    <Image Include="plane\thunder.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PlaneGame.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\PlaneGame.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

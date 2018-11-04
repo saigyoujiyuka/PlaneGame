@@ -1,0 +1,29 @@
+﻿  stdafx.cpp
+  Wingman.cpp
+  Skill.cpp
+  Shield.cpp
+  PlaneGameView.cpp
+  PlaneGameDoc.cpp
+  PlaneGame.cpp
+  MyPlane.cpp
+  MainFrm.cpp
+  GiftWM.cpp
+  GiftWeapon.cpp
+  GiftShield.cpp
+  GiftLife.cpp
+  GameObject.cpp
+  Explosion.cpp
+  Enemy.cpp
+  BOSS3.cpp
+  BOSS2.cpp
+  BOSS.cpp
+  Bomb1.cpp
+  Bomb.cpp
+  正在生成代码...
+  正在编译...
+  Ball2.cpp
+  Ball1.cpp
+  Ball.cpp
+  正在生成代码...
+Ball.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/SAFESEH”规范)
+  PlaneGame.vcxproj -> C:\Users\Liu Yuanjun\Desktop\飞机大战\201701060815刘元军\PlaneGame\Debug\PlaneGame.exe
